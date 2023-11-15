@@ -51,9 +51,11 @@ window.addEventListener("load", function() {
 		video.muted = !video.muted;
 		// Change volume information
 		if (video.muted) {
-			document.querySelector("#volume").innerText = "0%"
+			document.querySelector("#volume").innerText = "0%";
+			document.querySelector("#mute").innerText = "Unmute";
 		} else {
-			document.querySelector("#volume").innerText = video.volume * 100 + "%"
+			document.querySelector("#volume").innerText = video.volume * 100 + "%";
+			document.querySelector("#mute").innerText = "Mute";
 		}
 	})
 
